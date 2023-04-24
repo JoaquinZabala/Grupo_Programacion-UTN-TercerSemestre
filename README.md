@@ -2,37 +2,24 @@
 
 # GRUPO PROGRAMACION UTN- TERCER SEMESTRE
 
-integrantes:
+Repositorio del grupo programacion UTN para tercer semestre
 
-:computer: 
+Integrantes:
 
-Ayelen Luciana Sara Cabral 
+:computer: Ayelen Luciana Sara Cabral 
 
-:computer:
+:computer:Nicolas Pedro Bogado
 
-Nicolas Pedro Bogado
+:computer: Nahuel Roman Alaniz
 
-:computer: 
-Nahuel Roman Alaniz
+:computer: Camila Belén Gonzalez
 
-:computer: 
+:computer:Eduardo Montes
 
-Camila Belén Gonzalez
+:computer:Nadia Flores Cruz
 
-:computer:
+:computer: Cintia Analy Contrera
 
-Eduardo Montes
-
-:computer:
-
-Nadia Flores Cruz
-
-:computer: 
-
-Cintia Analy Contrera
-
-:computer:
-
-Juaquín Zabala
+:computer:Juaquín Zabala
 
 
