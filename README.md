@@ -23,3 +23,5 @@ Integrantes:
 :computer:Juaquín Zabala
 
 
+Trabajamos con:
+git Java javascript pitón
