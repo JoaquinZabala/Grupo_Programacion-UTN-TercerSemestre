@@ -24,4 +24,4 @@ Integrantes:
 
 
 Trabajamos con:
-git Java javascript pitón
+:git: :Java: :javascript: :pitón:
