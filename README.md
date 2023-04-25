@@ -23,4 +23,44 @@ Integrantes:
 :computer:Joaquín Zabala
 
 
-
+ ## ➰ ` Scrum Master ` ➰
+ 
+<table align="center">
+	<tr>
+		<th>SEMANA</th>
+		<th> SCRUM </th>
+	</tr>
+	<tr>
+		<td>1°</td>
+		<td>Ayelen Cabral</td>
+	</tr>
+	<tr>
+		<td>2°</td>
+		<td>Nicolas Bogado</td>
+	</tr>
+	<tr>
+		<td>3°</td>
+		<td>Nahuel Alaniz</td>
+	</tr>
+	<tr>
+		<td>4°</td>
+		<td>Camila Gonzalez</td>
+	</tr>
+	<tr>
+		<td>5°</td>
+		<td>Eduardo Montes</td>
+	</tr>
+	<tr>
+		<td>6°</td>
+		<td>Nadia Cruz</td>
+	</tr>
+	<tr>
+		<td>7°</td>
+		<td>Cintia Contrera</td>
+	</tr>	
+	<tr>
+		<td>8°</td>
+		<td>Joaquin Zabala</td>
+	</tr>
+	
+</table>
