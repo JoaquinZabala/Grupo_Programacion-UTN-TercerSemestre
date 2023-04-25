@@ -20,7 +20,7 @@ Integrantes:
 
 :computer: Cintia Analy Contrera
 
-:computer:Juaquín Zabala
+:computer:Joaquín Zabala
 
 
 
