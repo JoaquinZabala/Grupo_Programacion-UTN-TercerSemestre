@@ -18,7 +18,7 @@ Integrantes:
 
 :computer:Nadia Flores Cruz
 
-:computer: Cintia Analy Contrera
+:computer: Cintia Analy Contreras
 
 :computer:Joaquín Zabala
 
@@ -56,7 +56,7 @@ Integrantes:
 	</tr>
 	<tr>
 		<td>7°</td>
-		<td>Cintia Contrera</td>
+		<td>Cintia Contreras</td>
 	</tr>	
 	<tr>
 		<td>8°</td>
