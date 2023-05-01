@@ -16,7 +16,7 @@ Integrantes:
 
 :computer:Eduardo Montes
 
-:computer:Nadia Flores Cruz
+:computer:Nadia Florencia  Cruz
 
 :computer: Cintia Analy Contreras
 
