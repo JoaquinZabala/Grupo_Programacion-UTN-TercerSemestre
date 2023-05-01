@@ -32,15 +32,15 @@ Integrantes:
 	</tr>
 	<tr>
 		<td>1°</td>
-		<td>Ayelen Cabral</td>
+		<td>Nahuel Alaniz</td>
 	</tr>
 	<tr>
 		<td>2°</td>
-		<td>Nicolas Bogado</td>
+		<td>Joaquin Zabala</td>
 	</tr>
 	<tr>
 		<td>3°</td>
-		<td>Nahuel Alaniz</td>
+		<td>Ayelen Cabral</td>
 	</tr>
 	<tr>
 		<td>4°</td>
@@ -48,19 +48,19 @@ Integrantes:
 	</tr>
 	<tr>
 		<td>5°</td>
-		<td>Eduardo Montes</td>
-	</tr>
-	<tr>
-		<td>6°</td>
 		<td>Nadia Cruz</td>
 	</tr>
 	<tr>
-		<td>7°</td>
+		<td>6°</td>
 		<td>Cintia Contreras</td>
+	</tr>
+	<tr>
+		<td>7°</td>
+		<td>Nicolas Bogado</td>
 	</tr>	
 	<tr>
 		<td>8°</td>
-		<td>Joaquin Zabala</td>
+		<td>Eduardo Montes</td>
 	</tr>
 	
 </table>
