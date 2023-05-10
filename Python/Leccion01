@@ -1,0 +1,10 @@
+resultado = None
+
+try:
+     a = int(input('digite el primer numero:'))
+     b = int(input('digite el segundo numero:'))
+     resultado = a / b
+except TypeError as e:
+      print(f'ocurrio un error:{type(e)}')
+except ZeroDivisionError as e:
+      print(f'ocurrio un error:{type(e)}')
