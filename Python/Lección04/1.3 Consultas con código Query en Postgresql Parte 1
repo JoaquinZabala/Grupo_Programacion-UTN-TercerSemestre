@@ -1,0 +1,6 @@
+-- Consulta información seleccionada
+--SELECT * FROM persona where id_persona in (1,2,3)
+-- Ingresamos un nuevo elemento a la tabla
+--INSERT INTO persona(nombre,apellido,email)VALUES ('Susana', 'Lara','susalara@gmail.com')
+-- Hacemos la consulta para ver toda la información de la tabla
+--SELECT * FROM persona
