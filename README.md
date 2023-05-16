@@ -65,7 +65,7 @@ Integrantes:
 	
 </table>
 
-Lenguajes de programacion con los que trabajamos:
+## Lenguajes de programacion Utilizados:
 
 [![My Skills](https://skillicons.dev/icons?i=java)](https://skillicons.dev) Java
 
