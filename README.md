@@ -64,3 +64,11 @@ Integrantes:
 	</tr>
 	
 </table>
+
+Lenguajes de programacion con los que trabajamos:
+
+[![My Skills](https://skillicons.dev/icons?i=java)](https://skillicons.dev) Java
+
+[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) JavaScript
+
+[![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev) Python
