@@ -8,19 +8,19 @@ Integrantes:
 
 :computer: Ayelen Luciana Sara Cabral 
 
-:computer:Nicolas Pedro Bogado
+:computer: Nicolas Pedro Bogado
 
 :computer: Nahuel Roman Alaniz
 
 :computer: Camila Belén Gonzalez
 
-:computer:Eduardo Montes
+:computer: Eduardo Montes
 
-:computer:Nadia Florencia  Cruz
+:computer: Nadia Florencia  Cruz
 
 :computer: Cintia Analy Contreras
 
-:computer:Joaquín Zabala
+:computer: Joaquín Zabala
 
 
  ## ➰ ` Scrum Master ` ➰
