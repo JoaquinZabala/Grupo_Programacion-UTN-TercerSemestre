@@ -2,7 +2,7 @@
 
 # GRUPO PROGRAMACION UTN- TERCER SEMESTRE
 
-Repositorio del grupo programacion UTN para tercer semestre
+Repositorio del grupo Programación UTN para el tercer semestre
 
 Integrantes:
 
