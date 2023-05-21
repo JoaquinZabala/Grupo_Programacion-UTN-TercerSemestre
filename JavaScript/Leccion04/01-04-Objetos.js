@@ -70,25 +70,3 @@ console.log('Distinta forma de imprimir un objeto: forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
 
-console.log('Comenzamos a utilizar el metodo get');
-console.log(persona.nombreEdad);
-
-console.log('Comenzamos con el metodo get y set  para idiomas');
-persona.lang = 'en';
-console.log(persona.lang);
-
-function Persona3(nombre, apellido, email){//constructor
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.email = email;
-    this.nombreCompleto = function(){
-        return this.nombre+' '+this.apellido;
-    }
-}
-let padre = new Persona3('Leo','Lopez','lopez@gmail.com');
-padre.nombre = 'Luis'; //modificado el nombre
-console.log(padre);
-console.log(padre.nombreCompleto());//Utilizamos la funcion
-let madre = new Persona3('Laura','Contrera', 'contreral@gmail.com');
-console.log(madre);
-console.log(madre.nombreCompleto());
