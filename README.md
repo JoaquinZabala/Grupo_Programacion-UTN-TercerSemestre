@@ -67,6 +67,7 @@ Integrantes:
 
 ## Lenguajes de programacion Utilizados:
 
+<table align="center">
 [![My Skills](https://skillicons.dev/icons?i=java)](https://skillicons.dev) Java
 
 [![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) JavaScript
