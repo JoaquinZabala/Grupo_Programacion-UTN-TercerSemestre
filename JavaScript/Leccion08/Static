@@ -1,4 +1,4 @@
-//let persona3= new Persona('Carloa', 'Ponce'); esto no se debe hacer, Persona is not defied
+//let persona3= new Persona('Celeste', 'Puccio'); esto no se debe hacer, Persona is not defied
 
 class Persona{ //Clase padre
 
@@ -77,14 +77,14 @@ class Empleado extends Persona{ //Clase hija
     }
 }
 
-let persona1 = new Persona('Martín', 'Pérez');
+let persona1 = new Persona('Manuel', 'Pérez');
 console.log(persona1.nombre);
-persona1.nombre = 'Juan Carlos';
+persona1.nombre = 'Juan Manuel';
 console.log(persona1.nombre);
 //console.log(persona1);
-let persona2 = new Persona('Carlos', 'Lara');
+let persona2 = new Persona('Camila', 'Lilian');
 console.log(persona2.nombre);
-persona2.nombre = 'María Laura';
+persona2.nombre = 'Monica';
 console.log(persona2.nombre);
 //console.log(persona2);
 
@@ -114,7 +114,7 @@ console.log(persona1.toString());
 console.log(persona2.toString());
 console.log(empleado1.toString());
 console.log(Persona.contadorPersonas);
-let persona3 = new Persona('Carla', 'Pertosi');
+let persona3 = new Persona('Sofia', 'Patriccelli');
 console.log(persona3.toString());
 console.log(Persona.contadorPersonas);
 
@@ -123,7 +123,7 @@ console.log(Persona.MAX_OBJ);
 console.log(Persona.MAX_OBJ);
 
 
-let persona4 = new Persona('Franco', 'Diaz');
+let persona4 = new Persona('Facundo', 'Cabral');
 console.log(persona4.toString());
-let persona5 = new Persona('Liliana', 'Paz');
+let persona5 = new Persona('Ayelen', 'Bogado');
 console.log(persona5.toString());
