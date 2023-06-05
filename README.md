@@ -32,20 +32,20 @@ Integrantes:
 	</tr>
 	<tr>
 		<td>1°</td>
-		<td>Nahuel Alaniz</td>✔️ 
+		<td>Nahuel Alaniz</td>
 	</tr>
 	<tr>
 		<td>2°</td>
-		<td>Joaquin Zabala</td>✔️  
+		<td>Joaquin Zabala</td> 
 	</tr>
 	<tr>
 		<td>3°</td>
 		<td>Ayelen Cabral</td>
-	</tr>✔️ 
+	</tr> 
 	<tr>
 		<td>4°</td>
 		<td>Camila Gonzalez</td>
-	</tr>✔️ 
+	</tr> 
 	<tr>
 		<td>5°</td>
 		<td>Nadia Cruz</td>
