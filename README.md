@@ -73,6 +73,6 @@ Integrantes:
 
 [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev) Python
 
-[![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev) HTML
+[![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev) HLTM
 
-[![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev) CSS
+[![My Skills](https://skillicons.dev/icons?i=css)](https://skillicons.dev) CSS
