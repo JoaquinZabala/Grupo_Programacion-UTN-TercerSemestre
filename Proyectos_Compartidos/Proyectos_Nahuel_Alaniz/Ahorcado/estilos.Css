@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 30px;
+  }
+  
+  #ahorcado {
+    margin-top: 50px;
+  }
+  
+  #horca {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: relative;
+  }
+  
+  #horca > div {
+    position: absolute;
+  }
+  
+  #cabeza {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFCC99;
+    top: 10px;
+    left: 70px;
+  }
+  
+  #cuerpo {
+    width: 10px;
+    height: 100px;
+    background-color: #FFCC99;
+    top: 70px;
+    left: 95px;
+  }
+  
+  #brazo-izquierdo,
+  #brazo-derecho {
+    width: 70px;
+    height: 10px;
+    background-color: #FFCC99;
+    top: 85px;
+  }
+  
+  #brazo-izquierdo {
+    transform: rotate(45deg);
+    left: 25px;
+  }
+  
+  #brazo-derecho {
+    transform: rotate(-45deg);
+    left: 100px;
+  }
+  
+  #pierna-izquierda,
+  #pierna-derecha {
+    width: 70px;
+    height: 10px;
+    background-color: #FFCC99;
+    top: 155px;
+  }
+  
+  #pierna-izquierda {
+    transform: rotate(-45deg);
+    left: 30px;
+  }
+  
+  #pierna-derecha {
+    transform: rotate(45deg);
+    left: 100px;
+  }
+  
+  #palabra {
+    margin-top: 50px;
+    font-size: 24px;
+  }
+  
+  #intentos {
+    margin-top: 20px;
+  }
+  
+  #letras {
+    margin-top: 20px;
+  }
+  
+  #adivinar-input {
+    margin-top: 20px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
