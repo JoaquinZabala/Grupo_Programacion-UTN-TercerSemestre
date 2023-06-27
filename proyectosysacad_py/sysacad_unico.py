@@ -7,7 +7,7 @@ class MenuPrincipal(tk.Toplevel):
         def __init__(self):
             super().__init__()
             self.title("Menú Principal")
-            self.geometry("400x250")
+            self.geometry("500x300")
             self.resizable(False, False)
             self.config(bg="blue")
             self.label = tk.Label(self, text="Seleccione una opción:")
