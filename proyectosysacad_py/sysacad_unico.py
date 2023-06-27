@@ -189,7 +189,7 @@ class InicioSesion(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Inicio de Sesión")
-        self.geometry("500x300")
+        self.geometry("450x250")
         self.resizable(False, False)
         self.config(bg="blue")
 
