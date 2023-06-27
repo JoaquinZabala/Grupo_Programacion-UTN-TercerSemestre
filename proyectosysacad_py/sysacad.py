@@ -124,3 +124,68 @@ class Menu(tk.Toplevel):
     def cerrar_menu_principal(self):
         self.destroy()
         self.master.deiconify()
+
+
+class InicioSesion(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("Inicio de Sesión")
+        self.geometry("500x300")
+        self.resizable(False, False)
+        self.config(bg="blue")
+
+        label_bienvenida = tk.Label(self, text="Facultad Regional San Rafael\nSistema Académico SYSACAD\nMódulo de autogestión alumnos",
+                                    font=("Arial", 12), bg="blue", fg="white")
+        label_bienvenida.pack(pady=10)
+
+        label_usuario = tk.Label(self, text="Ingrese usuario:", font=("Arial", 12), bg="blue", fg="white")
+        label_usuario.pack(pady=10)
+        self.entry_usuario = tk.Entry(self, width=70)
+        self.entry_usuario.pack(pady=5)
+
+        label_contrasena = tk.Label(self, text="Ingrese contraseña:", font=("Arial", 12), bg="blue", fg="white")
+        label_contrasena.pack(pady=10)
+        self.entry_contrasena = tk.Entry(self, width=70, show="*")
+        self.entry_contrasena.pack(pady=5)
+
+        button_ingresar = tk.Button(self, text="Ingresar", command=self.verificar_credenciales)
+        button_ingresar.pack(pady=10)
+
+    def verificar_credenciales(self):
+        usuario = self.entry_usuario.get()
+        contrasena = self.entry_contrasena.get()
+
+        conexion = psycopg2.connect(
+            user='postgres',
+            password='admin',
+            host='127.0.0.1',
+            database='usuarios',
+            port='5432',
+        )
+
+        try:
+            cursor = conexion.cursor()
+            cursor.execute("SELECT * FROM usuarios WHERE usuario = %s AND contraseña = %s", (usuario, contrasena))
+            resultado = cursor.fetchone()
+            cursor.close()
+
+            if resultado:
+                self.abrir_menu_principal()
+            else:
+                messagebox.showerror("Error", "Credenciales incorrectas")
+        except psycopg2.Error as e:
+            print("Error al conectarse a la base de datos:", e)
+            messagebox.showerror("Error", "Error al conectarse a la base de datos")
+
+        conexion.close()
+
+    def abrir_menu_principal(self):
+        self.withdraw() 
+        menu_principal = Menu(self) 
+        self.mainloop()
+
+
+
+app = InicioSesion()
+
+app.mainloop()
