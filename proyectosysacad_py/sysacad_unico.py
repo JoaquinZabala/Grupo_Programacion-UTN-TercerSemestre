@@ -211,7 +211,7 @@ class InicioSesion(tk.Tk):
         button_ingresar = tk.Button(self, text="Ingresar", command=self.verificar_credenciales)
         button_ingresar.pack(pady=10)
 #Ayelen
-    def verificar_credenciales(self):
+  def verificar_credenciales(self):
         usuario = self.entry_usuario.get()
         contrasena = self.entry_contrasena.get()
 
