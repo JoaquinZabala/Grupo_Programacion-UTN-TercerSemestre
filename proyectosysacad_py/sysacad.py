@@ -328,3 +328,42 @@ class InicioSesion(tk.Tk):
 
         button_ingresar = tk.Button(self, text="Ingresar", command=self.verificar_credenciales)
         button_ingresar.pack(pady=10)
+        def verificar_credenciales(self):
+        usuario = self.entry_usuario.get()
+        contrasena = self.entry_contrasena.get()
+
+
+        # Verificar las credenciales en la base de datos
+        conexion = psycopg2.connect(
+            user='postgres',
+            password='30851655',
+            host='127.0.0.1',
+            database='test_bd',
+            port='5432',
+        )
+
+        try:
+            cursor = conexion.cursor()
+            cursor.execute("SELECT * FROM usuarios WHERE usuario = %s AND contraseña = %s", (usuario, contrasena))
+            resultado = cursor.fetchone()
+            cursor.close()
+
+            if resultado:
+                self.abrir_menu_principal()
+            else:
+                messagebox.showerror("Error", "Credenciales incorrectas")
+        except psycopg2.Error as e:
+            print("Error al conectarse a la base de datos:", e)
+            messagebox.showerror("Error", "Error al conectarse a la base de datos")
+
+        conexion.close()
+
+    def abrir_menu_principal(self):
+        self.withdraw()  # Ocultar la ventana de inicio de sesión
+        menu_principal = MenuPrincipal()  # Crear la ventana del menú principal
+        self.mainloop()
+
+
+app = InicioSesion()
+
+app.mainloop()
