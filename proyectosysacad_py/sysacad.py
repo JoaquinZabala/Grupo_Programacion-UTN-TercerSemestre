@@ -54,7 +54,7 @@ class MenuPrincipal(tk.Toplevel):
     def mostrar_opcion6(self):
         self.destroy()
         self.master.deiconify()
-#Cintia Contreras
+
 class Opcion1Window(tk.Toplevel):
     def _init_(self, menu_principal):
         super()._init_()
@@ -106,7 +106,7 @@ class Opcion1Window(tk.Toplevel):
     def cerrar_opcion(self):
         self.destroy()  # Cerrar la ventana de la opción 1
         self.menu_principal.deiconify()  # Mostrar nuevamente la ventana del menú principal       
-#Joaquin Zabala
+
 class Opcion2Window(tk.Toplevel):
     def _init_(self, menu_principal):
         super()._init_()
