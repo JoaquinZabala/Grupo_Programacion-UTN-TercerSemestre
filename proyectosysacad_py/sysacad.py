@@ -303,3 +303,28 @@ class Opcion5Window(tk.Toplevel):
     def cerrar_opcion(self):
         self.destroy()  # Cerrar la ventana
         self.menu_principal.deiconify()  # Mostrar nuevamente la ventana del menú principal
+class InicioSesion(tk.Tk):
+    def _init_(self):
+        super()._init_()
+        self.title("Inicio de Sesión")
+        self.geometry("500x300")
+        self.resizable(False, False)
+        self.config(bg="blue")
+
+        label_bienvenida = tk.Label(self,
+                                    text="Facultad Regional San Rafael\nSistema Académico SYSACAD\nMódulo de autogestión alumnos",
+                                    font=("Arial", 12), bg="blue", fg="white")
+        label_bienvenida.pack(pady=10)
+
+        label_usuario = tk.Label(self, text="Ingrese usuario:", font=("Arial", 12), bg="blue", fg="white")
+        label_usuario.pack(pady=10)
+        self.entry_usuario = tk.Entry(self, width=70)
+        self.entry_usuario.pack(pady=5)
+
+        label_contrasena = tk.Label(self, text="Ingrese contraseña:", font=("Arial", 12), bg="blue", fg="white")
+        label_contrasena.pack(pady=10)
+        self.entry_contrasena = tk.Entry(self, width=70, show="*")
+        self.entry_contrasena.pack(pady=5)
+
+        button_ingresar = tk.Button(self, text="Ingresar", command=self.verificar_credenciales)
+        button_ingresar.pack(pady=10)
