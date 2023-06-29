@@ -54,7 +54,58 @@ class MenuPrincipal(tk.Toplevel):
     def mostrar_opcion6(self):
         self.destroy()
         self.master.deiconify()
-        
+#Cintia Contreras
+class Opcion1Window(tk.Toplevel):
+    def _init_(self, menu_principal):
+        super()._init_()
+        self.title("Materias de Tecnicatura en Programación")
+        self.geometry("800x500")
+        self.config(bg="blue")
+        self.protocol("WM_DELETE_WINDOW", self.volver)
+        self.protocol("WM_DELETE_WINDOW", self.cerrar_opcion)
+        self.menu_principal = menu_principal
+        # Modificación Eduardo
+        # Datos de las materias del plan
+        datos_materias = [
+            ["Año", "Dic.", "Materia", "Se cursa", "Se rinde"],
+            ["1", "1c", "Matemática", "Si", "Si"],
+            ["1", "1c", "Programación 1", "Si", "Si"],
+            ["1", "1c", "Sistemas de Procesamiento de Datos", "Si", "Si"],
+            ["1", "1c", "Inglés 1", "Si", "Si"],
+            ["1", "1c", "Laboratorio de computación 1", "Si", "Si"],
+            ["1", "2c", "Programación 2", "Si", "Si"],
+            ["1", "2c", "Arquitectura y Sistemas Operativos", "Si", "Si"],
+            ["1", "2c", "Estadística", "Si", "Si"],
+            ["1", "2c", "Inglés 2", "Si", "Si"],
+            ["1", "2c", "Laboratorio de computación 2", "Si", "Si"],
+            ["1", "2c", "Metodología de la investigación", "Si", "Si"]
+        ]
+
+        # Crear la tabla
+        frame_tabla = tk.Frame(self, bg="blue")
+        frame_tabla.pack(pady=10)
+
+        # Generar las columnas de la tabla
+        for col, encabezado in enumerate(datos_materias[0]):
+            label_encabezado = tk.Label(frame_tabla, text=encabezado, font=("Arial", 14, "bold"), bg="blue", fg="white")
+            label_encabezado.grid(row=0, column=col, padx=5, pady=5)
+
+        # Generar las filas de la tabla
+        for row, datos_fila in enumerate(datos_materias[1:], start=1):
+            for col, dato in enumerate(datos_fila):
+                label_dato = tk.Label(frame_tabla, text=dato, font=("Arial", 12), bg="blue", fg="white")
+                label_dato.grid(row=row, column=col, padx=5, pady=5)
+
+        self.button_volver = tk.Button(self, text="Volver", command=self.volver)
+        self.button_volver.pack()
+
+    def volver(self):
+        self.destroy()  # Cerrar la ventana de la opción 4
+        self.menu_principal.deiconify()
+
+    def cerrar_opcion(self):
+        self.destroy()  # Cerrar la ventana de la opción 1
+        self.menu_principal.deiconify()  # Mostrar nuevamente la ventana del menú principal       
 #Joaquin Zabala
 class Opcion2Window(tk.Toplevel):
     def _init_(self, menu_principal):
