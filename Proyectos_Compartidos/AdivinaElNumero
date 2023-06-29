@@ -1,0 +1,22 @@
+import random
+
+def adivinar_numero():
+    numero_secreto = random.randint(1, 100)
+    intentos = 0
+
+    print("¡Bienvenido al juego de adivinar el número!")
+    print("Estoy pensando en un número del 1 al 100. ¡Intenta adivinarlo!")
+
+    while True:
+        intento = int(input("Ingresa tu número: "))
+        intentos += 1
+
+        if intento < numero_secreto:
+            print("Demasiado bajo. Intenta nuevamente.")
+        elif intento > numero_secreto:
+            print("Demasiado alto. Intenta nuevamente.")
+        else:
+            print(f"¡Felicidades! Adivinaste el número en {intentos} intentos.")
+            break
+
+adivinar_numero()
