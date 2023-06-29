@@ -1,0 +1,29 @@
+import psycopg2
+
+# Datos de conexión a la base de datos
+datos_conexion = {
+    "host": '127.0.0.1',
+    "database": "usuarios",
+    "user": "postgres",
+    "password": "admin"
+}
+
+
+# Función para agregar un nuevo usuario a la base de datos
+def agregar_usuario(usuario, contraseña):
+    # Establecer conexión con la base de datos
+    conexion = psycopg2.connect(**datos_conexion)
+    cursor = conexion.cursor()
+
+    # Insertar nuevo usuario en la tabla
+    cursor.execute("INSERT INTO usuarios (usuario, contraseña) VALUES (%s, %s)", (usuario, contraseña))
+    conexion.commit()
+
+    # Cerrar conexión
+    conexion.close()
+
+# Ejemplo de uso
+nuevo_nombre = input("Ingrese el nombre del nuevo usuario: ")
+nueva_contrasena = input("Ingrese la contraseña del nuevo usuario: ")
+
+agregar_usuario(nuevo_nombre, nueva_contrasena)
