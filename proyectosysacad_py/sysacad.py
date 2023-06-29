@@ -54,3 +54,97 @@ class MenuPrincipal(tk.Toplevel):
     def mostrar_opcion6(self):
         self.destroy()
         self.master.deiconify()
+
+
+class Opcion4Window(tk.Toplevel):
+    def _init_(self, menu_principal):
+        super()._init_()
+        self.title("Correlatividades para ren5dir")
+        self.geometry("800x500")
+        self.config(bg="blue")
+        self.protocol("WM_DELETE_WINDOW", self.volver)
+        self.protocol("WM_DELETE_WINDOW", self.cerrar_opcion)
+        self.menu_principal = menu_principal
+
+        #Correlatividad para rendir
+        datos_correlatividad = [
+            ["Año", "Materia", "Correlatividad"],
+            ["1", "Matemática", "No regularizó"],
+            ["1", "Programación 1", "No regularizó"],
+            ["1", "Sistemas de Procesamiento de Datos", "No regularizó"],
+            ["1", "Inglés 1", "No regularizó"],
+            ["1", "Laboratorio de computación 1", "No regularizó"],
+            ["1", "Programación 2", "No regularizó Programación 1-Laboratorio de computación 1"],
+            ["1", "Arquitectura y Sistemas Operativos", "No regularizó Sistemas de Procesamiento de Datos"],
+            ["1", "Estadística", "No regularizó Matemática"],
+            ["1", "Inglés 2", "No regularizó Inglés 1"],
+            ["1", "Laboratorio de computación 2", "No regularizó Programación 1-Laboratorio de computación 1"],
+            ["1", "Metodología de la investigación", "No regularizó"]
+        ]
+
+        # Creamos la tabla
+        frame_tabla = tk.Frame(self, bg="blue")
+        frame_tabla.pack(pady=10)
+
+        # las columnas de la tabla
+        for col, encabezado in enumerate(datos_correlatividad[0]):
+            label_encabezado = tk.Label(frame_tabla, text=encabezado, font=("Arial", 14, "bold"), bg="blue", fg="white")
+            label_encabezado.grid(row=0, column=col, padx=5, pady=5)
+
+        # Las filas de la tabla
+        for row, datos_fila in enumerate(datos_correlatividad[1:], start=1):
+            for col, dato in enumerate(datos_fila):
+                label_dato = tk.Label(frame_tabla, text=dato, font=("Arial", 12), bg="blue", fg="white")
+                label_dato.grid(row=row, column=col, padx=5, pady=5)
+
+        self.button_volver = tk.Button(self, text="Volver", command=self.volver)
+        self.button_volver.pack()
+
+    def volver(self):
+        self.destroy()  # Cerrar la ventana de la opción 4
+        self.menu_principal.deiconify()
+
+    def cerrar_opcion(self):
+        self.destroy()  # Cerrar la ventana de la opción 4
+        self.menu_principal.deiconify()
+
+class Opcion5Window(tk.Toplevel):
+    def _init_(self, menu_principal):
+        super()._init_()
+        self.title("Opción 5")
+        self.geometry("400x250")
+        self.config(bg="blue")
+        self.protocol("WM_DELETE_WINDOW", self.volver)
+        self.protocol("WM_DELETE_WINDOW", self.cerrar_opcion)
+        self.menu_principal = menu_principal
+
+        datos_correlatividades = [
+            ["Fecha", "Materia", "Nota", "Especialidad"],
+            ["", "", "", ""]
+        ]
+
+        # Crear la tabla
+        frame_tabla = tk.Frame(self, bg="blue")
+        frame_tabla.pack(pady=10)
+
+        # Generar las columnas de la tabla
+        for col, encabezado in enumerate(datos_correlatividades[0]):
+            label_encabezado = tk.Label(frame_tabla, text=encabezado, font=("Arial", 14, "bold"), bg="blue", fg="white")
+            label_encabezado.grid(row=0, column=col, padx=5, pady=5)
+
+        # Generar las filas de la tabla
+        for row, datos_fila in enumerate(datos_correlatividades[1:], start=1):
+            for col, dato in enumerate(datos_fila):
+                label_dato = tk.Label(frame_tabla, text=dato, font=("Arial", 12), bg="blue", fg="white")
+                label_dato.grid(row=row, column=col, padx=5, pady=5)
+
+        self.button_volver = tk.Button(self, text="Volver", command=self.volver)
+        self.button_volver.pack()
+
+    def volver(self):
+        self.destroy()  # Cerrar
+        self.menu_principal.deiconify()
+
+    def cerrar_opcion(self):
+        self.destroy()  # Cerrar la ventana
+        self.menu_principal.deiconify()  # Mostrar nuevamente la ventana del menú principal
