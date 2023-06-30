@@ -1,0 +1,25 @@
+class Empleado extends Persona{
+    static contadorEmpelados = 0;
+
+    constructor(nombre, apellido, edad, sueldo){
+        super(nombre,apellido,edad);
+        this._idEmpleado = ++Empleado.contador.Empleados;
+        this._sueldo = sueldo;
+
+    } 
+    get idEmpleado(){
+        return this._idEmpleado;
+
+    }
+    get sueldo(sueldo){
+        this._sueldo = sueldo;
+    }
+
+     toString(){
+        return`
+        ${super.toString()} 
+        ${this._idEmpleado}
+        ${this._sueldo}`;
+
+     }
+}
